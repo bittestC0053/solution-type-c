@@ -19,7 +19,6 @@ public class Main {
 		
 		// 게임 시작
 		while( true ) {
-	
 			System.out.print( "[" + min + "-" + max + "] 사이의 값 입력:" );
 			int answer = scanner.nextInt();
 			
@@ -39,6 +38,21 @@ public class Main {
 	}
 	
 	public static boolean checkAnswer(int answer) {
-		return true;
+		
+		count++;
+		if(randomNumber==answer)
+		{
+			return true;
+		}
+		else {
+			if(answer<randomNumber) {
+				System.out.println("입력하신 값보다 높습니다.");
+			}
+			else {
+				System.out.println("입력하신 값보다 낮습니다.");
+			}
+			return false;
+		}
+		
 	}
 }

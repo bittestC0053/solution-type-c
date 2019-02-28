@@ -2,7 +2,7 @@ package problem02;
 
 public class BaseService {
 	public void service(String state) {
-		String result = state.equals("낮") ? day() : night() ;
+		String result = state.equals("낮") ? day() : night();
 		System.out.println(result);
 	}
 
